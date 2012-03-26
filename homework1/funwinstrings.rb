@@ -1,10 +1,6 @@
 def palindrome? (string)
   clean_string = string.gsub(/\W/,"").downcase
-  if clean_string == clean_string.reverse
-    return true
-  else
-    return false
-  end
+  clean_string == clean_string.reverse
 end
 
 def count_words(string)
